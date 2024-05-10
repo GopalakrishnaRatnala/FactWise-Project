@@ -1,0 +1,194 @@
+.list-item-container{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+}
+.profile-name-img-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+.profile-pic{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.name{
+    font-size: 16px;
+    font-weight: 500;
+}
+.toggleButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+.list-item-content-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.list-item-whole-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+.age-gender-country-details-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.filed-deatils{
+    margin-left: 0px;
+    margin-top: 5px;
+}
+.delete-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    color: red;
+}
+.edit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    color: blue;
+}
+.edit-delete-buttons-container{
+    align-self: flex-end;
+    display: flex;
+}
+.hidden-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 14px;
+}
+.details-container{
+    display: flex;
+    flex-direction: column;
+}
+.description-details-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.save-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    color:green;
+}
+.cancel-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    color: red;
+}
+.gender-select-field{
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.country-input-field{
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.description-input-field{
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    height: 70px;
+    margin-top: 5px;
+    }
+.age-input-field{
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.name-input-field{
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.delete-confirmation-dialog{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.delete{
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: orangered;
+    padding: 8px 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin: 2px;
+}
+.cancel{
+    border-radius: 8px;
+    padding: 8px 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+    margin: 2px;
+}
+label {
+    color: gray;
+}
