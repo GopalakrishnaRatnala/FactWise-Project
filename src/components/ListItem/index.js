@@ -17,7 +17,8 @@ class ListItem extends Component {
             gender: "",
             country: "",
             description: "",
-            name:""
+            name:"",
+            age: ""
         },
     }
 
@@ -40,13 +41,25 @@ class ListItem extends Component {
                 gender: eachItem.gender,
                 country: eachItem.country,
                 description: eachItem.description,
-                name: `${eachItem.first} ${eachItem.last}`
+                name: `${eachItem.first} ${eachItem.last}`,
+                age: `${this.calculateAge(eachItem.dob)}`
             },
         });
     };
 
     handleInputChange = (e) => {
         const { name, value } = e.target;
+        if (!gender || !country || !description || !name || !age) {
+            alert("Please fill in all fields.");
+            return;
+        } else if (isNaN(age)) {
+            alert("Age must be a number.");
+            return;
+        } else if (!/^[A-Za-z\s]+$/.test(country)) {
+            alert("Country must contain only letters.");
+            return;
+        }
+        
         this.setState((prevState) => ({
             editedValues: {
                 ...prevState.editedValues,
@@ -98,7 +111,7 @@ class ListItem extends Component {
                             <div className="age-gender-country-details-container">
                                 <div className ="details-container"> 
                                     <label>Age</label>
-                                    {isEdited ? <input type = "text" className="age-input-field"/>:<p className="filed-deatils">{this.calculateAge(eachItem.dob)}</p>}
+                                    {isEdited ? <input type = "text" className="age-input-field" value={editedValues.age}/>:<p className="filed-deatils">{this.calculateAge(eachItem.dob)}</p>}
                                     
                                 </div>
                                 <div className ="details-container">
