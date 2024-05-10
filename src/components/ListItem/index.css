@@ -64,6 +64,7 @@
     cursor: pointer;
     border: none;
     color: red;
+    font-size: 20px;
 }
 .edit-button{
     display: flex;
@@ -74,6 +75,7 @@
     cursor: pointer;
     border: none;
     color: blue;
+    font-size: 20px;
 }
 .edit-delete-buttons-container{
     align-self: flex-end;
@@ -105,6 +107,7 @@
     cursor: pointer;
     border: none;
     color:green;
+    font-size: 20px;
 }
 .cancel-button{
     display: flex;
@@ -115,6 +118,7 @@
     cursor: pointer;
     border: none;
     color: red;
+    font-size: 20px;
 }
 .gender-select-field{
     border: 1px solid #ccc;

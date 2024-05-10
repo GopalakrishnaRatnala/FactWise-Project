@@ -49,17 +49,22 @@ class ListItem extends Component {
 
     handleInputChange = (e) => {
         const { name, value } = e.target;
-        if (!gender || !country || !description || !name || !age) {
-            alert("Please fill in all fields.");
-            return;
-        } else if (isNaN(age)) {
-            alert("Age must be a number.");
-            return;
-        } else if (!/^[A-Za-z\s]+$/.test(country)) {
-            alert("Country must contain only letters.");
-            return;
-        }
         
+         // Validate age field: Allow only numeric input
+    if (name === "age" && isNaN(value)) {
+        return; // Ignore non-numeric input
+    }
+
+    // Validate country field: Allow only text input
+    if (name === "country" && /\d/.test(value)) {
+        return; // Ignore if input contains numbers
+    }
+
+    // Empty field validation: Ensure no field is left empty
+    if (value.trim() === "") {
+        return; // Ignore empty input
+    }
+
         this.setState((prevState) => ({
             editedValues: {
                 ...prevState.editedValues,
